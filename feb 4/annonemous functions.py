@@ -32,14 +32,18 @@
 # print(list(map(lambda item: f"{item} is even" if item % 2 == 0 else f"{item} is odd", list_)))
 
 ''' wap to return the strings which are starting with vowels '''
-# st = ['apple','gmail','yahoo','flipcart']
+st = ['apple','gmail','yahoo','flipcart']
 # print(list(map((lambda item:f"{item} is a vowel" if item[0].lower() in "aeiou" else f"{item} not start with vowel"),st)))
-#
+# res = lambda item: f"{item} is a vowel" if item[0].lower() in "aeiou" else f"{item} is not a vowel"
+# out = list(map(res,st))
+# print(out)
+
+
 # def vowel(item):
 #     if item.lower() in "aeiou":
 #         return item
 # res = map(vowel, st)
-# print(res)
+# print(list(res))
 
 # sentence = "python is a language, python programming is easy"
 # words = sentence.split()

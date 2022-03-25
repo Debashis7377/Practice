@@ -104,9 +104,9 @@
 #         a = b
 #         b = c
 #         return fibo(num, a, b)
-# fibo(50)
-def fibo(num, a=0, b=1, i=o):
-    if i < num :
+# fibo(15)
+# def fibo(num, a=0, b=1, i=o):
+#     if i < num :
 
 
 my = 'kasi'
@@ -119,6 +119,13 @@ my = 'kasi'
 # sr()
 
 
+
+# def fibo(n):
+#     if n <= 1:
+#         return n
+#     else:
+#         return fibo(n-1) + fibo( n -2)
+# print(fibo(15))
 
 
 
