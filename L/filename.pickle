@@ -1,0 +1,84 @@
+# python -> json --> serialization/ marshalling
+# json -> python --> deserialization/ unmarshalling
+
+import json
+# # serialization
+#
+data = {"name": "abc", "id": 20}
+# x = json.dumps(data)
+# print(x, type(x))
+# #
+# # # desrialization
+# y = json.loads(x)
+# print(y, type(y))
+
+####################################################################
+
+# with open("sample.json", "w+") as file:
+#     json.dump(data, file)
+#     # json.dump([1, 2, 3, 4], file)
+#     file.seek(0)
+#     data = json.load(file)
+#     print(data)
+
+# with open("sample.json") as file:
+#     data = json.load(file)
+#     print(data)
+
+
+
+
+
+
+
+
+
+
+# def add(a, b):
+#     k = a + b
+#     s = str(k)
+#
+#     if len(s)> 3:
+#         print(s[-3:])
+#     else:
+#         raise ValueError
+# add(5, 56)
+
+
+
+
+
+
+
+"""  Data classes """
+
+# from dataclasses import dataclass
+#
+# @dataclass
+# class A():
+#     title : str
+#     author : str
+#     number : int
+#     def __init__(self, title, author, number):
+#         self.title = title
+#         self.author = author
+#         self.number = number
+#
+#
+# k = A("Debashis", "behera", 25)
+# # j = A("nandu", "Gupta", 635)
+# j = A("debashis", "behera", 25)
+# if k == j:
+#     print("yes")
+# else:
+#     print("no")
+
+
+
+
+"""  place holder """
+
+# s = "%s is a very good boy and he is %d years of old and he is trying to eat %s "
+# k = s%("debashis", 25, "apple")
+# print(k)
+
