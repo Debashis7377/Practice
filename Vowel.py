@@ -5,7 +5,7 @@ a=input("enter the string")
 #     print("string startswith consonant")
 #
 
-# string starts with vowel
+'''string starts with vowel'''
 # if a[0] in "aeiouAEIOU" :
 #     print("vowel")
 # else :
@@ -13,9 +13,9 @@ a=input("enter the string")
 #
 
 
-# string ends with vowel
+'''string ends with vowel '''
 
-if a[-1] in "aeiouAEIOU" :
-    print("vowel")
-else :
-    print("consonant")
+# if a[-1] in "aeiouAEIOU" :
+#     print("vowel")
+# else :
+#     print("consonant")

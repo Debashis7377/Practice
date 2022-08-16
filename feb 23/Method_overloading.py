@@ -57,18 +57,23 @@ most important notes , interview question
 in this method we have to use default value for method overloaded '''
 
 
-# class point:
-#
-#     def __init__(self, a=0, b=0, c=0, d=0):        # using defalut value
-#         self.a = a
-#         self.b = b
-#         self.c = c
-#         self.d = d
+class point:
+
+    def __init__(self, a=0, b=0, c=0, d=0):        # using defalut value
+        self.a = a
+        self.b = b
+        self.c = c
+        self.d = d
+
+    def display(self):
+        print(self.a + self.b+self.c+self.d)
+
 #
 # p0 = point()
 # p1 = point(1, 2)
 # p2 = point(1, 2, 3)
-# p3 = point(1, 2, 3, 4)
+p3 = point(1, 2, 3, 4)
+p3.display()
 #
 # print(p0.__dict__)
 # print(p1.__dict__)

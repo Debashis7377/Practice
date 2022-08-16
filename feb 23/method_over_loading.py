@@ -124,12 +124,12 @@ class point:
 #         self.name = name
 #     def __call__(self):
 #         return f"hello.{self.name}"
-
-
-
+#
+#
+#
 # g = greeting("debashis")
 # print(g())                 # TypeError: 'greeting' object is not callable
-
+#
 # print(g())             # hello.debashis
 
 
@@ -207,7 +207,7 @@ class point:
 #     return a - b
 #
 #
-# # add(1, 2)                   # __call__ calling add
+# add(1, 2)                   # __call__ calling add
 # # sub(5, 6)                      #__call__ calling sub
 #
 # print(add(1, 2))               #__call__ calling add

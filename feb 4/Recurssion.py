@@ -109,7 +109,7 @@
 #     if i < num :
 
 
-my = 'kasi'
+# my = 'kasi'
 
 # def sr(si = 0):
 #     if  my[si:si+1]:
@@ -126,7 +126,6 @@ my = 'kasi'
 #     else:
 #         return fibo(n-1) + fibo( n -2)
 # print(fibo(15))
-
 
 
 

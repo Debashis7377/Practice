@@ -14,8 +14,9 @@
 # a = {'python', 'java', 'c', 'rubby', 'perl'}
 # print(sorted(a))
 #
-# v = {"gmail": 5, "facebook":8, "java": 8}
-# # print(sorted(v))
+# v = {"gmail": 5, "facebook":8, "java": 4}
+# print(sorted(v, key = len))
+# print(v.items())
 # print(sorted(v.items(), key=len))
 
 
@@ -81,7 +82,7 @@ d = {"gmail": 5, "walmart": 7, "apple": 3, "flipkart": 8}
 """ most occurring word """
 # sentence = "hi how are you how is your health"
 # list_ = sentence.split()
-# print(list_)
+#
 # d_count = {word: list_.count(word) for word in list_}
 # print(d_count)
 # res = sorted(d_count.items(), key=lambda item: item[-1])

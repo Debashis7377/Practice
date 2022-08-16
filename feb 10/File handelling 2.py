@@ -1,6 +1,7 @@
 from collections import Counter
 from collections import defaultdict
 import csv
+
 # import sys
 #
 # sys.setrecursionlimit(10)
@@ -36,6 +37,7 @@ path_ = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\txt_l
 #         if lines.strip():
 #             word = lines.split()
 #             l.append(word[2])
+#
 # msg = Counter(l)
 # for i in msg:
 #     if i in ('INFO', 'TRACE', 'WARNING'):
@@ -62,6 +64,7 @@ path3 = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\txt_l
 #                 d[word] += 1
 # print(d)
 # c = Counter(d)
+# print(c)
 # most, *rest, least = c.most_common()
 # print(most, least)
 
@@ -71,10 +74,11 @@ path2 = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\csv_f
 
 # with open(path2) as csv_file:
 #     obj = csv.reader(csv_file)
+#     next(obj)
 #     for i in obj:
 #         print(i[0])
 
-''' 2.   wap to print only the names salaires that are >70000 '''
+''' 2.   wap to print only the names salaries that are >70000 '''
 
 # with open(path2) as csv_file:
 #     obj = csv.reader(csv_file)
@@ -124,6 +128,7 @@ _path = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\csv_f
 # with open(_path) as file:
 #     obj = csv.DictReader(file)
 #     l = list(obj)
+#     print(l)
 #     res = sorted(l, key=lambda d: float(d["price"]))
 #     print(list(res))
 

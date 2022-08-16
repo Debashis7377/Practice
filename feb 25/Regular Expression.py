@@ -216,6 +216,7 @@ syntax is -->     " ^input "
 # print(re.findall(r"\w{2,5}", "hi hello and python is a programming language"))
 # #['hi', 'hello', 'and', 'pytho', 'is', 'progr', 'ammin', 'langu', 'age']
 
+
 # print(re.findall(r"\b\w{2,5}\b", "hi hello and python is a programming language"))    # ['hi', 'hello', 'and', 'is']
 
 sentence = "hello hi world hello how are you h How"
@@ -375,3 +376,25 @@ Downloading file python.py to downloads folder...
 # match = re.findall(r'\b\w{3}\b', sentence)
 # print(match)               # ['how', 'are', 'you', 'how', 'old', 'are', 'you']
 # print(len(match))          # 7
+
+
+
+
+
+
+
+
+
+# string = "debashis behera kajal debashisbehera7377@gmail.com "
+# import re
+# res = re.findall(r"\w+\@\w+\.\w+", string)
+# print(res)
+
+
+
+
+
+
+
+
+

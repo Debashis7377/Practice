@@ -5,7 +5,7 @@
 #
 #     def add_item(self,name, quanity, price ):
 #         self.cart.append({"name": name, "quantity": quanity, "price":price})
-#
+
 #     def total_cost(self):
 #         # total = sum([item["quantity"] * item["price"] for item in self.cart])
 #         # return total
@@ -13,7 +13,7 @@
 #         for item in self.cart:
 #             total = total + (item["quantity"] * item["price"])
 #         return total
-#
+
 #     def remove_item(self, name):
 #         for item in self.cart:
 #             if item["name"] == name:

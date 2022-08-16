@@ -34,16 +34,18 @@
 #     if word[0].lower() in "aeiou":
 #         return word
 # print(list(filter(ext, l)))
-'''   '''
+# res = lambda item: item[0].lower() in "aeiou"
+# print(list(filter(res,l)))
+# '''   '''
 # st = ['debashis', 'behera']
 # def fun(a):
 #     print([a])
 # res = map(fun, st)
 # list(res)
-
+#
 # res = list(map(list, st))
 # print(res)
-
+#
 # l = [1, 2, 3, 4]
 # def count(a):
 #     return (a*a)
@@ -51,16 +53,16 @@
 
 # res = lambda i: i*i
 # print(list(map(res, l)))
-
+# print(list(filter(res, l)))       # will not work
 
 # l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # def c(a):
 #     if a[0] % 2 == 0:
 #         return a[1] ** 2
-
+#
 # res = list(filter(c, enumerate(l)))
 # print(list( map(c, res)))
-
+#
 
 # print(list( map(c, list(filter(c, enumerate(l))))))
 

@@ -3,6 +3,8 @@ from itertools import islice
 from collections import deque
 path = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\txt_log_files\sample.txt"
 path_ = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\txt_log_files\access-log.txt"
+
+
 ''' wap to print line number and line in the file'''
 
 # with open(path) as file:
@@ -30,6 +32,7 @@ path_ = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\txt_l
 ''' wap to print the lines from the last of the file '''
 
 # with open(path) as file:
+#     # print(list(file))
 #     for line in reversed(list(file)):
 #         print(line)
 
@@ -85,7 +88,7 @@ path_ = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\txt_l
 #             d[item] += 1
 #     print(d)
 
-''' wap to extract all the ip adresses from access log .txt file'''
+''' wap to extract all the ip addresses from access log .txt file'''
 
 # with open(path_) as file:
 #     l = []
@@ -95,7 +98,7 @@ path_ = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\txt_l
 #             l.append(word[0])
 #     print(l)
 
-''' wap to creat a dictionary of ip adresses and their count '''
+''' wap to create a dictionary of ip addresses and their count '''
 
 # with open(path_) as file:
 #     d = {}
@@ -147,7 +150,7 @@ path_ = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\txt_l
 #     print(list(res))
 
 # or
-
+#
 # with open(path) as file:
 #     for line_no, line in enumerate(file, start=1):
 #         if line_no <= n:
@@ -159,8 +162,9 @@ path_ = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\txt_l
 #     count = 0
 #     for line in file:
 #         count += 1
+#     # print(count)
 #     file.seek(0)
-#     res = islice(file, count-n, count)
+#     res = islice(file, count-n, count)        # islie(file, 5 , 7)
 #     print(list(res))
 
 # using deque
@@ -184,5 +188,18 @@ path1 = r"C:\Debashis\pythonProject\pythonProject\Practice\L\file handelling pra
 # f = {d[(i.items())] : e[(i.items())] for i in range(len(d))}
 # print(f)
 #
+
+
+
+path = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\txt_log_files\sample.txt"
+word = "debashis"
+with open(path, "r+") as file:
+    # for line in file:
+    for line_no, line in enumerate(file):
+        if line_no == 3:
+            print(line)
+            index = file.tell()
+            file.seek(index)
+            file.write("python")
 
 

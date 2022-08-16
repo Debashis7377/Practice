@@ -1,6 +1,6 @@
 '''create a dictionary of charecter and its count '''
 
-# d1={char : s.count(char) for  cahr in s}
+# d1={char : s.count(char) for  char in s}
 
 
 

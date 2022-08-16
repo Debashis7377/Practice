@@ -8,8 +8,8 @@ s = "helloworld"
 #     else:
 #         d[item] += 1
 # print(d)
-p = {item:s.count(item) for item in s}
-print(p)
+# p = {item:s.count(item) for item in s}
+# print(p)
 
 '''  2.     '''
 names = ["apple","google","apple","yahoo","yahoo","gmail","google","gmail","gmail","gmail"]
@@ -21,11 +21,11 @@ names = ["apple","google","apple","yahoo","yahoo","gmail","google","gmail","gmai
 #         d[item] += [index]
 # print(d)
 
-from collections import defaultdict
-d = defaultdict(list)
-for item in range(len(names)):
-    d[nmaes[item]] += [item]
-print(d)
+# from collections import defaultdict
+# d = defaultdict(list)
+# for item in range(len(names)):
+#     d[names[item]] += [item]
+# print(d)
 '''  4.    '''
 # s = "hello world"
 # d = {}
@@ -67,20 +67,6 @@ print(d)
 # d[0] = b
 # d[1] = a
 # print(d)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

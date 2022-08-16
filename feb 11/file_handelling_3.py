@@ -1,23 +1,24 @@
 from collections import defaultdict, Counter
-# path = r"C:\Users\Vidya\PycharmProjects\Alpha_3\files_directory\txt_log_files\sample.txt"
+path = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\txt_log_files\sample.txt"
 #
-# # with open(path) as f:
-# #     data = f.read()
-# #     print(data)
-# #     print(f.tell())
-# #     f.seek(0)
-# #     print(f.read(10))
+# with open(path) as f:
+#     data = f.read()
+#     print(data)
+#     print(f.tell())
+#     f.seek(0)
+#     print(f.read(10))
+
+# with open(path) as file:
+#     print(file.readline(10))    # reads 10 characters from the first line
+#     print(file.readline(5))     # reads 5 characters after the previous output
+#     print(file.readline())      # reads the left out characters in the line
 #
-# # with open(path) as file:
-# #     print(file.readline(10))    # reads 10 characters from the first line
-# #     print(file.readline(5))     # reads 5 characters after the previous output
-# #     print(file.readline())      # reads the left out characters in the line
 #
-#
-# # with open(path) as file:
-# #     print(file.readlines())
+# with open(path) as file:
+#     print(file.readlines())
 #
 # """ Reading the file without loading the same into memory"""
+
 # # with open(path) as file:
 # #     for line in file:
 # #         print(line)
@@ -108,7 +109,7 @@ from collections import defaultdict, Counter
 #     # print(dd)
 #
 # """ list of ip address from access-log.txt file """
-# f_path = r"C:\Users\Vidya\PycharmProjects\Alpha_3\files_directory\txt_log_files\access-log.txt"
+# f_path = r"C:\Debashis\pythonProject\pythonProject\Practice\files_directory\txt_log_files\access-log.txt"
 #
 # with open(f_path) as file:
 #     l = []
@@ -119,7 +120,7 @@ from collections import defaultdict, Counter
 #     # print(l)
 # ip_ = Counter(l)
 # # print(ip_)
-# # print(ip_.most_common())
+# print(ip_.most_common())
 #
 #
 # """ create a dictionary of ip addresses and their count"""

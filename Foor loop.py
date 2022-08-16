@@ -72,7 +72,7 @@ string= 'Debashis'
 # for index in range(len(string)):
 #      print(index,string[index])
 
-'''Enumerator ---> packing anf unpacking with two variables '''
+'''Enumerator ---> packing and unpacking with two variables '''
 for index,item in enumerate(string):
     print(index,'--->',item)
 

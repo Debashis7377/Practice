@@ -170,3 +170,19 @@ after function defination , then it will have no affect on the defalt value that
 #             i += 1
 #
 # fib(15)
+
+
+s = "AABBCCCDSSAACDD"
+i = 0
+c = 0
+res = ""
+while i < len(s):
+    if s[i] == s[i+1: i+2]:
+        c += 1
+        i += 1
+    else:
+        c += 1
+        res += str(c)+s[i]
+        i +=1
+        c = c-c
+print(res)

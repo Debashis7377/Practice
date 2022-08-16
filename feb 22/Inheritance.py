@@ -116,12 +116,12 @@
 #     def demo(self):
 #         print("class C demo")
 #         super().demo()
-
+#
 # c = C()
 # print(c)                                                #<__main__.C object at 0x000001EAA8D73C40>
-# print(C.__mro__)                                        #(<class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>)
-
-
+# # print(C.__mro__)                                        #(<class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>)
+# c.demo()
+#
 
 
 
@@ -166,6 +166,7 @@ class BankAccount:
     def __init__(self, name , balance):
         self.name = name
         self.balance = balance
+        print(self.balance)
 
     def deposite(self, amount):
         if amount < 0 :
@@ -200,11 +201,12 @@ class SalaryAccount(BankAccount):
 
     def deposit(self, amount):
         if self.is_first_month_salary:
-
             self.is_first_month_salary = False
             super().deposite(amount + 1000)
+            print(self.balance)
         else:
             super().deposite(amount)
+            print(self.balance)
 
     def overdraft(self, amount):
         if amount <= self.max_draft_amount:
@@ -253,10 +255,12 @@ class SukanyaSamrudhiAccount(BankAccount):
 # s2 = SalaryAccount("behera")
 
 
+# d = BankAccount("debashis", 10000)
 
+'''.........................doubt.........................................             '''
 
-s = SalaryAccount("Debashis")
-s.deposite(50000)
+# s = SalaryAccount("Debashis")
+# s.deposite(50000)
 
 
 # s = SBAccount("Debashis", 20000)
@@ -280,22 +284,22 @@ s.deposite(50000)
 # print(c.__class__)
 # c.demo()
 
-class PenaltyAccount:
-    def withdraw(self, amount):
-        self.balance -= 200
-        super().withdraw(amount)
-class PensionAccount(PenaltyAccount, BankAccount):
-    penalty_amount = 200
-
-class maxTransactionlimit(PensionAccount, BankAccount):
-    penalty_amount =  1000
+# class PenaltyAccount:
+#     def withdraw(self, amount):
+#         self.balance -= 200
+#         super().withdraw(amount)
+# class PensionAccount(PenaltyAccount, BankAccount):
+#     penalty_amount = 200
+#
+# class maxTransactionlimit(PensionAccount, BankAccount):
+#     penalty_amount =  1000
 
 # p = PensionAccount("steve", 10000)
 # p.withdraw(1000)
 
-q = maxTransactionlimit("steve", 10000)
-
-q.withdraw(1000)
+# q = maxTransactionlimit("steve", 10000)
+#
+# q.withdraw(1000)
 
 
 
@@ -305,7 +309,7 @@ q.withdraw(1000)
 #         self.balance -= 200               #penalty amount
 #         super().withdraw(amount)
 
-
+ 
 
 # k = PensionAccount("steve", 10000)
 # print(k.balance)

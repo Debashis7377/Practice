@@ -93,36 +93,36 @@ from collections import defaultdict
 count = defaultdict(int)
 
 
-# def count_(func):
-#     def wrapper(*args, **kwargs):
-#         count[func.__name__] += 1
-#         return func(*args, **kwargs)
-#     return wrapper
-#
-#
-#
-#
-# @count_
-# def greet():
-#     return "hello world"
-#
-# @count_
-# def add(a, b):
-#     return a+b
-#
-# @count_
-# def sub(a, b):
-#     return a-b
-# def greeting(name):
-#     return f"hello {name}"
-#
-#
-# print(add(1,2))
-# print(add(1,2))
-# print(add(1,2))
-# print(add(1,2))
-# print(add(1,2))
-# print(count)
+def count_(func):
+    def wrapper(*args, **kwargs):
+        count[func.__name__] += 1
+        return func(*args, **kwargs)
+    return wrapper
+
+
+
+
+@count_
+def greet():
+    return "hello world"
+
+@count_
+def add(a, b):
+    return a+b
+
+@count_
+def sub(a, b):
+    return a-b
+def greeting(name):
+    return f"hello {name}"
+
+
+print(add(1,2))
+print(add(1,2))
+print(add(1,2))
+print(add(1,2))
+print(add(1,2))
+print(count)
 
 
 
@@ -289,11 +289,11 @@ count = defaultdict(int)
 # print(add(2, 5))
 
 '''  phone decorator '''
-# numbers = [1234567890, 7978423230, 8093763907, 7978423235, 8989457810]
+# numbers = [1234567890, 7978423230, 8093763907, 7978423235, 8989457810, 917978562563]
 #
 # def add_prefix(number):
 #     str_number = str(number)
-#     if len(str_number) ==10:
+#     if len(str_number) == 10:
 #         str_number = "+91-" + str_number
 #         return str_number
 #     elif len(str_number) == 12 and str_number.startswith("91"):
@@ -313,17 +313,18 @@ count = defaultdict(int)
 # def print_numbers(phone_numbers):
 #     for item in phone_numbers:
 #         print(item)
-
+#
+# print_numbers(numbers)
 
 ''' parameterised decorator '''
 
-def delay(seconds = 5):
-    def _delay(func):
-        def wrapper():
-            sleep(seconds)
-            return func
-        return wrapper
-    return _delay
+# def delay(seconds = 5):
+#     def _delay(func):
+#         def wrapper():
+#             sleep(seconds)
+#             return func
+#         return wrapper
+#     return _delay
 
 
 

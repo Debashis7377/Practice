@@ -1,5 +1,5 @@
 class BankAccount:
-    interest_rate = 0.4          # class avriable
+    interest_rate = 0.4          # class variable
     #all the customer will share the same value or interest rate
     def __init__(self, name, balance=0):
         # instance variables(each customer will get a fresh copy of name , balance and transaction
@@ -11,7 +11,8 @@ class BankAccount:
 
     def deposite(self, amount):
         self.balance = self.balance + amount
-        self.transaction.append(f"ammount deposited {amount}")
+        self.transaction.append(amount)
+        print(f"ammount deposited {amount}")
 
     def withdraw(self, amount):
         if amount > self.balance:
@@ -20,9 +21,9 @@ class BankAccount:
         self.transaction.append(f"amount withdrawn{amount}")
         return f"please collect the cash{amount}"
 
-    def trnasfer(self, to_account, amount):
+    def transfer(self, to_account, amount):
         if self.balance < amount:
-            raise ValueError("insifficient funds")
+            raise ValueError("insufficient funds")
         to_account.deposite(amount)
         self.balance -= amount
 
@@ -48,26 +49,26 @@ c3 = BankAccount("deb")
 # print(c3.__dict__)
 
 c1.deposite(1000)
-c2.deposite(5000)
-c3.deposite(10000)
+# c2.deposite(5000)
+# c3.deposite(10000)
+# print(c1.balance)
 
-
-c1.withdraw(500)
-# c1.withdraw(2000)
-c2.withdraw(2000)
-c3.withdraw(300)
+# c1.withdraw(500)
+# # c1.withdraw(2000)
+# c2.withdraw(2000)
+# c3.withdraw(300)
 
 # print(c1.balance)
 
 
-c1.deposite(10000)
-
-c1.trnasfer(c2, 10000)
+# c1.deposite(10000)
+#
+# c1.trnasfer(c2, 10000)
 # print(c2.balance)
 # print(c1.balance)
 
 
-# c1.statement()
+c1.statement()
 
 
 # c1.roi()
